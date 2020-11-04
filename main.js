@@ -7,7 +7,7 @@ let socioemotionalMenu = ["Socioemotional Menu 1", "Socioemotional Menu 2", "Soc
 let mathMenu = ["Math Menu 1", "Math Menu 2", "Math Menu 3"];
 let computerScienceMenu = ["Overview", "Step 0: Setup", "Step 1: OOP w/ Perlin Noise", "Step 2: States", "Step 3: Infection", "Step 4: Recovery or Death", "Step 5: Display Data", "Step 6: Virus Variable Controls", "Step 7: Virus Variables Input", "Project: Enhance Simulation"];
 let menuBigArray = [homeMenu, socioemotionalMenu, mathMenu, computerScienceMenu];
-let canvasWidth;
+let defaultHTMLArray = ["h1", "s1", "m1", "Hello!"];
 
 // get references 
 let body = document.querySelector("body");
@@ -195,13 +195,13 @@ function restoreDefault() {
 	for (let i = 0; i < menuBigArray.length - 1; i++) {
 		for (let j = 0; j < menuBigArray[i].length; j++) {
 			if (j == 0) {
-				contentBigArray[i][j].classList.remove("hidden");
+				contentBigArray[i][j].style.display = "block";
 				tempDivArray[i][j].classList.add("active");
 				tempDivArray[i][j].style.color = "white";
 			}
 
 			else {
-				contentBigArray[i][j].classList.add("hidden");
+				contentBigArray[i][j].style.display = "none";
 				tempDivArray[i][j].classList.remove("active");
 				tempDivArray[i][j].style.color = "#b5d1de";
 			}
