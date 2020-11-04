@@ -38,7 +38,7 @@ html, body {
 	background-color: #095087;
 	width: 25%;
 	min-width: 25%;
-	min-height: 95%;
+	min-height: 1300px;
 }
 
 .menu {
@@ -74,6 +74,22 @@ canvas {
 	margin: auto;
 	text-align: center;
 	/*display: block;*/
+}
+
+.title {
+	margin-top: 10px;
+}
+
+p {
+	text-align: left;
+	padding: 10px 70px;
+}
+
+a {
+	text-align: left;
+	padding: 10px 70px;
+	display: block;
+	color: #609;
 }
 
 /*@media(max-width: 1200px) {
