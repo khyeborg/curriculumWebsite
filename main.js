@@ -5,7 +5,7 @@ let tabsBackgroundColorArray = ["#153243", "#800F20", "#254514", "#20124D"];
 let homeMenu = ["Home Menu 1", "Home Menu 2", "Home Menu 3"];
 let socioemotionalMenu = ["Socioemotional Menu 1", "Socioemotional Menu 2", "Socioemotional Menu 3"];
 let mathMenu = ["Math Menu 1", "Math Menu 2", "Math Menu 3"];
-let computerScienceMenu = ["Overview", "Step 0: Setup", "Step 1: OOP w/ Perlin Noise", "Step 2: States", "Step 3: Infection", "Step 4: Recovery or Death", "Step 5: Display Data", "Step 6: Virus Variable Controls", "Step 7: Virus Variables Input", "Project: Enhance Simulation"];
+let computerScienceMenu = ["Overview", "Step 0: Setup", "Step 1: OOP w/ Perlin Noise", "Step 2: States", "Step 3: Infection", "Step 4: Recovery or Death", "Step 5: Display Data", "Step 6: Virus Variable Controls", "Step 7: Virus Variables Input", "Project: Simulation Enhancement"];
 let menuBigArray = [homeMenu, socioemotionalMenu, mathMenu, computerScienceMenu];
 let defaultHTMLArray = ["h1", "s1", "m1", "Hello!"];
 
