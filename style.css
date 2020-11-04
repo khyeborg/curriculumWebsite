@@ -1,0 +1,92 @@
+html, body {
+    font-size: 16px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.page {
+	height: 95%;
+	display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+#all_the_tabs {
+    display: flex;
+    height: 7.5%;
+}
+
+.tab {
+    text-align: center;
+    /*height: 40px;*/
+    width: 100%;
+    font-size: 150%;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-bottom: 2px;
+    font-family: Helvetica;
+    border-radius: 18px 18px 0px 0px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    min-width: 150px;
+}
+
+.menu_big_div {
+	background-color: #095087;
+	width: 25%;
+	min-width: 25%;
+	min-height: 95%;
+}
+
+.menu {
+	background-color: #095087;
+	color: #b5d1de;
+	min-width: 25%;
+	padding: 20px;
+	padding-left: 35px;
+  	box-sizing: border-box;
+}
+
+canvas {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.p5 {
+	padding: 20px;
+}
+
+.content {
+	width: 75%;
+	min-height: 95%;
+	margin: auto;
+	text-align: center;
+}
+
+.sketches {
+	width: 1000px;
+	height: 500px;
+	border: none;
+	margin: auto;
+	text-align: center;
+	/*display: block;*/
+}
+
+/*@media(max-width: 1200px) {
+    .tab {
+    	font-size: 100%;
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    }
+}*/
+
+
+
+
+
+
+
