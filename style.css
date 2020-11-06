@@ -65,20 +65,25 @@ canvas {
 	min-height: 95%;
 	margin: auto;
 	text-align: center;
+	margin-top: 0px;
 }
 
 .sketches {
 	width: 1000px;
-	height: 500px;
+	height: 505px;
 	border: none;
 	margin: auto;
 	text-align: center;
 	/*display: block;*/
 }
 
+#sketch6 {
+	height: 630px;
+}
+
 .title {
-	margin-top: 10px;
-	margin-bottom: 15px;
+	margin-top: 22px;
+	margin-bottom: 20px;
 }
 
 p {
@@ -91,6 +96,39 @@ a {
 	padding: 10px 70px;
 	display: block;
 	color: #609;
+}
+
+#controls_div {
+    background-color: #095087;
+    color: white;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding: 20px;
+    padding-left: 40px;
+    display: flex;
+    text-align: center;
+} 
+
+.controls_sub_div {
+	display: block;
+	width: 50%;
+}
+
+.input_div {
+	padding: 10px 0px;
+}
+
+.input_span {
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+}
+
+input {
+	width: 50px;
+}
+
+::placeholder { 
+	opacity: 0.8; 
 }
 
 /*@media(max-width: 1200px) {

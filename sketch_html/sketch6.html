@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sketch 6</title>
+    <script src="p5/p5.js" type="text/javascript"></script>
+    <script src="p5/addons/p5.dom.js" type="text/javascript"></script>
+    <script src="p5/addons/p5.sound.js" type="text/javascript"></script>
+    <!-- <script src="main.js" defer></script> -->
+    
+   <script src="../coronaVirusV2/step6_variableControls/sketch.js" type="text/javascript" defer></script>
+
+    <!-- custom CSS -->
+    <style> 
+      body {
+        padding: 0; 
+        margin: 0;
+      }
+
+      #controls_div {
+        background-color: #095087;
+        color: white;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        padding: 20px;
+        padding-left: 40px;
+        display: flex;
+        text-align: center;
+      } 
+
+      .controls_sub_div {
+        display: block;
+        width: 50%;
+      }
+
+      .input_div {
+        padding: 10px 0px;
+      }
+
+      .input_span {
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+      }
+
+      input {
+        width: 50px;
+      }
+
+      ::placeholder { 
+        opacity: 0.8; 
+      }
+
+      .right_button {
+      	margin-right: 100px;
+      }
+
+      canvas {
+		display: block;
+		margin: auto;
+	  }
+
+	  button {
+		  /*background-color: #555555;
+		  border: none;
+		  color: white;
+		  padding: 5px 10px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 12px;
+		  font-family: Verdana, Arial, Helvetica, sans-serif;*/
+      }
+    </style>
+
+  </head>
+
+  <body>
+  	<div id="sketch_holder">
+        <!-- Our sketch will go here! -->
+    </div>
+    <div id="controls_div">
+      <div class="controls_sub_div">
+        <div class="input_div">
+          <span class="input_span"># of Initial Uninfected:</span> <input type="text" placeholder="500" id="initialUninfected"> 
+          <button onclick="updateInitialUninfected();">Submit</button>
+        </div>
+
+        <div class="input_div">
+          <span class="input_span"># of Initial Infected:</span> <input type="text" placeholder="2" id="initialInfected"> 
+          <button onclick="updateInitialInfected();">Submit</button>
+        </div>
+      </div>
+
+      <div class="controls_sub_div">
+        <div class="input_div">
+          <span class="input_span">Rate of Infection:</span> <input type="text" placeholder="10" id="rateOfInfection"> 
+          <button class="right_button" onclick="updateRateOfInfection();">Submit</button>
+        </div class="input_div">
+
+        <div class="input_div">
+          <span class="input_span">Mortality Rate:</span> <input type="text" placeholder="20" id="mortalityRate"> 
+          <button class="right_button" onclick="updateMortalityRate();">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
