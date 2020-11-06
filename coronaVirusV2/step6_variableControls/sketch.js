@@ -214,10 +214,10 @@ function computeStats() {
       }
    }
 
-   console.log("Uninfected:", numberOfUninfectedSubjects);
-   console.log("Infected:", numberOfInfectedSubjects);
-   console.log("Recovered:", numberOfRecoveredSubjects);
-   console.log("Dead:", numberOfDeadSubjects);
+   document.getElementById("number_of_uninfected").innerHTML = numberOfUninfectedSubjects;
+   document.getElementById("number_of_infected").innerHTML = numberOfInfectedSubjects;
+   document.getElementById("number_of_recovered").innerHTML = numberOfRecoveredSubjects;
+   document.getElementById("number_of_dead").innerHTML = numberOfDeadSubjects;
 }
 
 let updatedNumberOfUninfectedSubjects = numberOfUninfectedSubjects;

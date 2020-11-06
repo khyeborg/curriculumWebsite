@@ -11,15 +11,59 @@
    <script src="../coronaVirusV2/step5_computeStats/sketch.js" type="text/javascript" defer></script>
 
     <!-- custom CSS -->
-    <style type="text/css">
+    <style> 
       body {
-        margin: 0px;
-        padding: 0px;
+        padding: 0; 
+        margin: 0;
+      }
+
+      #stats_div {
+        background-color: #555555;
+        color: white;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        padding: 10px;
+        padding-left: 40px;
+        display: flex;
+        text-align: center;
+      } 
+
+      .stats_sub_div {
+        width: 50%;
+        display: block;
+      }
+
+      .stats_sub_sub_div {
+        padding: 10px;
       }
     </style>
 
   </head>
 
   <body>
+    <div id="stats_div">
+      <div class="stats_sub_div">
+        <div class="stats_sub_sub_div"># of Uninfected Subjects: 
+          <span id="number_of_uninfected"></span>
+        </div>
+
+        <div class="stats_sub_sub_div"># of Infected Subjects: 
+          <span id="number_of_infected"></span>
+        </div>
+      </div>
+
+      <div class="stats_sub_div">
+        <div class="stats_sub_sub_div"># of Recovered Subjects: 
+          <span id="number_of_recovered"></span>
+        </div>
+
+        <div class="stats_sub_sub_div"># of Dead Subjects: 
+          <span id="number_of_dead"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="sketch_holder">
+        <!-- Our sketch will go here! -->
+    </div>
   </body>
 </html>

@@ -10,8 +10,8 @@ let computerScienceTitle = ["Overview", "Setup", "OOP w/ Perlin Noise", "States"
 let computerScienceNotes = ["Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes"];
 let menuBigArray = [homeMenu, socioemotionalMenu, mathMenu, computerScienceMenu];
 let defaultHTMLArray = ["h1", "s1", "m1", "Hello!"];
-let needSourceCode = [1, 2, 3, 4, 5, 6];
-let zipArray = ["setup", "oop", "states", "infection", "recovery", "computeStats"];
+let needSourceCode = [1, 2, 3, 4, 5, 6, 7];
+let zipArray = ["setup", "oop", "states", "infection", "recovery", "computeStats", "variableControls"];
 
 // get references 
 let body = document.querySelector("body");
@@ -217,7 +217,19 @@ function restoreDefault() {
 	// restore default to computer science content page
 	computerScienceContent.innerHTML = "";
 	addComputerScienceTitle(0);
-	addComputerScienceNotes(0)
+	addComputerScienceNotes(0);
+
+	for (let i = 0; i < tempDivArray[3].length; i++) {
+		if (i == 0) {
+			tempDivArray[3][i].classList.add("active");
+			tempDivArray[3][i].style.color = "white";
+		}
+
+		else {
+			tempDivArray[3][i].classList.remove("active");
+			tempDivArray[3][i].style.color = "#b5d1de";
+		}
+	}
 }
 
 function addComputerScienceTitle(i) {

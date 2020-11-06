@@ -77,8 +77,12 @@ canvas {
 	/*display: block;*/
 }
 
+#sketch5 {
+	height: 605px;
+}
+
 #sketch6 {
-	height: 630px;
+	height: 725px;
 }
 
 .title {
