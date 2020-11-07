@@ -260,16 +260,16 @@ let updatedNumberOfUninfectedSubjects = numberOfUninfectedSubjects;
 let updatedNumberOfInfectedSubjects = numberOfInfectedSubjects;
 
 function runSimulation() {
-	updatedNumberOfUninfectedSubjects = int(document.getElementById("initialUninfected").value);
+	updatedNumberOfUninfectedSubjects = parseFloat(document.getElementById("initialUninfected").value);
    numberOfUnInfectedSubjects = updatedNumberOfUninfectedSubjects;
 
-   updatedNumberOfInfectedSubjects = int(document.getElementById("initialInfected").value);
+   updatedNumberOfInfectedSubjects = parseFloat(document.getElementById("initialInfected").value);
    numberOfInfectedSubjects = updatedNumberOfInfectedSubjects;
 
-   infectionRate = int(document.getElementById("rateOfInfection").value);
-   mortalityRate = int(document.getElementById("mortalityRate").value);
-   maskRate = int(document.getElementById("maskRate").value);
-   maskDecreaseFactor = int(document.getElementById("maskDecreaseFactor").value);
+   masterInfectionRate = parseFloat(document.getElementById("rateOfInfection").value);
+   mortalityRate = parseFloat(document.getElementById("mortalityRate").value);
+   maskRate = parseFloat(document.getElementById("maskRate").value);
+   maskDecreaseFactor = parseFloat(document.getElementById("maskDecreaseFactor").value);
 
    resetSketch();
 }
