@@ -3,15 +3,15 @@ let activeColor = "#2b678a";
 let hoverColor = "#2b678a";
 let tabsBackgroundColorArray = ["#153243", "#153243", "#153243", "#153243"];
 let homeMenu = ["CURRICULUM OVERVIEW", "RATIONALE", "PHILOSOPHY", "SOCIAL RELEVANCE", "GOALS"];
-let socioemotionalMenu = ["Socioemotional Menu 1", "Socioemotional Menu 2", "Socioemotional Menu 3"];
+// let socioemotionalMenu = ["Socioemotional Menu 1", "Socioemotional Menu 2", "Socioemotional Menu 3"];
 let mathMenu = ["Math Menu 1", "Math Menu 2", "Math Menu 3"];
-let computerScienceMenu = ["Overview", "Step 0: Setup", "Step 1: OOP w/ Perlin Noise", "Step 2: States", "Step 3: Infection", "Step 4: Recovery or Death", "Step 5: Display Data", "Step 6: Virus Variable Controls", "Step 7: Virus Variables Input", "Project: Simulation Enhancement"];
-let computerScienceTitle = ["Overview", "Setup", "OOP w/ Perlin Noise", "States", "Infection", "Recovery or Death", "Display Data", "Virus Variable Controls", "Virus Variables Input", "Project: Simulation Enhancement"];
+let computerScienceMenu = ["Overview", "Step 0: Setup", "Step 1: OOP w/ Perlin Noise", "Step 2: States", "Step 3: Infection", "Step 4: Recovery or Death", "Step 5: Display Data", "Step 6: Virus Variable Controls", "Step 7: Virus Variables Input", "Assessment", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample Project #1", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample Project #2"];
+let computerScienceTitle = ["Overview", "Setup", "OOP w/ Perlin Noise", "States", "Infection", "Recovery or Death", "Display Data", "Virus Variable Controls", "Virus Variables Input", "Assessment: Simulation Enhancement", "Wearing Masks", "Social Distancing"];
 let computerScienceNotes = ["Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes", "Notes notes notes"];
-let menuBigArray = [homeMenu, socioemotionalMenu, mathMenu, computerScienceMenu];
-let defaultHTMLArray = ["h1", "s1", "m1", "Hello!"];
-let needSourceCode = [1, 2, 3, 4, 5, 6, 7];
-let zipArray = ["setup", "oop", "states", "infection", "recovery", "computeStats", "variableControls"];
+let menuBigArray = [homeMenu, mathMenu, computerScienceMenu];
+let defaultHTMLArray = ["h1", "m1", "Hello!"];
+let needSourceCode = [1, 2, 3, 4, 5, 6, 7, 10, 11];
+let zipArray = ["setup", "oop", "states", "infection", "recovery", "computeStats", "variableControls", "wearingMasks", "socialDistancing"];
 
 // get references 
 let body = document.querySelector("body");
@@ -19,10 +19,10 @@ let tabsArray = document.getElementsByClassName("tab");
 let pageArray = document.getElementsByClassName("page");
 let menuBigDivArray = document.getElementsByClassName("menu_big_div");
 let homeContentArray = document.getElementsByClassName("home_content_page");
-let socioemotionalContentArray = document.getElementsByClassName("socioemotional_content_page");
+// let socioemotionalContentArray = document.getElementsByClassName("socioemotional_content_page");
 let mathContentArray = document.getElementsByClassName("math_content_page");
 let computerScienceContentArray = document.getElementsByClassName("computer_science_content_page");
-let contentBigArray = [homeContentArray, socioemotionalContentArray, mathContentArray, computerScienceContentArray];
+let contentBigArray = [homeContentArray, mathContentArray, computerScienceContentArray];
 let tempDivArray = [];
 
 let computerScienceContent = document.getElementById("computer_science_overview");
@@ -88,6 +88,16 @@ for (let i = 0; i < menuBigArray.length; i++) {
 		tempDiv.classList.add("menu");
 		tempDiv.innerHTML = menuBigArray[i][j];
 
+		if (i == menuBigArray.length - 1 && j == menuBigArray[i].length - 3) {
+			tempDiv.classList.add("lastmenu");
+		}
+
+		if (i == menuBigArray.length - 1) {
+			if (j == menuBigArray[i].length - 2 || j == menuBigArray[i].length - 1) {
+				tempDiv.classList.add("submenu");
+			}
+		}
+
 		if (j == 0) {
 			tempDiv.style.paddingTop = "35px";
 			tempDiv.style.color = "white";
@@ -142,14 +152,14 @@ for (let i = 0; i < tempDivArray.length - 1; i++) {
 // let computerScienceHTMLArray = ["Hello!"];
 
 // computer science content
-for (let i = 0; i < tempDivArray[3].length; i++) {
+for (let i = 0; i < tempDivArray[2].length; i++) {
 	// make sure the first menu is active
 	if (i == 0) {
-		tempDivArray[3][i].style.color = "white";
-		tempDivArray[3][i].classList.add("active");
+		tempDivArray[2][i].style.color = "white";
+		tempDivArray[2][i].classList.add("active");
 	}
 
-	tempDivArray[3][i].onclick = function() {
+	tempDivArray[2][i].onclick = function() {
 
 		if (i == 0) {
 			// add title to each computer science page
@@ -169,30 +179,30 @@ for (let i = 0; i < tempDivArray[3].length; i++) {
 		// add HTML to each computer science page
 
 		// white or #b5d1de
-		for (let j = 0; j < tempDivArray[3].length; j++) {
+		for (let j = 0; j < tempDivArray[2].length; j++) {
 			if (i == j) {
-				tempDivArray[3][j].style.color = "white";
-				tempDivArray[3][j].classList.add("active");
+				tempDivArray[2][j].style.color = "white";
+				tempDivArray[2][j].classList.add("active");
 			}
 
 			else {
-				tempDivArray[3][j].style.color = "#b5d1de";
-				tempDivArray[3][j].classList.remove("active");
+				tempDivArray[2][j].style.color = "#b5d1de";
+				tempDivArray[2][j].classList.remove("active");
 			}
 		}
 	}
 
-	tempDivArray[3][i].onmouseover = function() {
-		tempDivArray[3][i].style.color = "white";
+	tempDivArray[2][i].onmouseover = function() {
+		tempDivArray[2][i].style.color = "white";
 	}
 
-	tempDivArray[3][i].onmouseout = function() {
-		if (tempDivArray[3][i].classList.contains("active")) {
-			tempDivArray[3][i].style.color = "white";
+	tempDivArray[2][i].onmouseout = function() {
+		if (tempDivArray[2][i].classList.contains("active")) {
+			tempDivArray[2][i].style.color = "white";
 		}
 
 		else {
-			tempDivArray[3][i].style.color = "#b5d1de";
+			tempDivArray[2][i].style.color = "#b5d1de";
 		}
 	}
 }
@@ -219,15 +229,15 @@ function restoreDefault() {
 	addComputerScienceTitle(0);
 	addComputerScienceNotes(0);
 
-	for (let i = 0; i < tempDivArray[3].length; i++) {
+	for (let i = 0; i < tempDivArray[2].length; i++) {
 		if (i == 0) {
-			tempDivArray[3][i].classList.add("active");
-			tempDivArray[3][i].style.color = "white";
+			tempDivArray[2][i].classList.add("active");
+			tempDivArray[2][i].style.color = "white";
 		}
 
 		else {
-			tempDivArray[3][i].classList.remove("active");
-			tempDivArray[3][i].style.color = "#b5d1de";
+			tempDivArray[2][i].classList.remove("active");
+			tempDivArray[2][i].style.color = "#b5d1de";
 		}
 	}
 }
@@ -254,8 +264,17 @@ function addComputerScienceNotes(i) {
 
 	if (needSourceCode.includes(i)) {
 		let tempa = document.createElement("a");
-		tempa.innerHTML = "Download Source Code - Step " + (i - 1) + ": " + computerScienceTitle[i];
-		tempa.href = "zip_files/step" + (i - 1) + "_" + zipArray[i - 1] + ".zip";
+
+		if (i < 10) {
+			tempa.innerHTML = "Download Source Code - Step " + (i - 1) + ": " + computerScienceTitle[i];
+			tempa.href = "zip_files/step" + (i - 1) + "_" + zipArray[i - 1] + ".zip";
+		}
+
+		else {
+			tempa.innerHTML = "Download Source Code - Project #" + (i - 9) + ": " + computerScienceTitle[i];
+			tempa.href = "zip_files/project" + (i - 9) + "_" + zipArray[i - 3] + ".zip";
+		}
+
 		computerScienceContent.appendChild(tempa);
 	}
 }
