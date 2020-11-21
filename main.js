@@ -306,8 +306,8 @@ function addComputerScienceNotes(i) {
 		let tempa = document.createElement("a");
 
 		if (i < 10) {
-			tempa.innerHTML = "Download Source Code - Step " + (i - 1) + ": " + computerScienceTitle[i];
-			tempa.href = "zip_files/step" + (i - 1) + "_" + zipArray[i - 1] + ".zip";
+			tempa.innerHTML = "Download Source Code - Day " + (i) + ": " + computerScienceTitle[i];
+			tempa.href = "zip_files/Day" + (i) + "_" + zipArray[i - 1] + ".zip";
 		}
 
 		else {
