@@ -258,9 +258,49 @@ function addComputerScienceIFrame(i) {
 }
 
 function addComputerScienceNotes(i) {
+	// Student Learning Objective
+	let temph2 = document.createElement("h2");
+	temph2.innerHTML = "Student Learning Objective";
+	temph2.setAttribute("class", "computer_science_h2");
+	computerScienceContent.appendChild(temph2);
+
 	let tempp = document.createElement("p");
-	tempp.innerHTML = computerScienceNotes[i];
+	tempp.innerHTML = contentObject[i].studentLearningObjective;
+	tempp.setAttribute("class", "computer_science_p");
 	computerScienceContent.appendChild(tempp);
+
+	// Lesson and Outcome
+	let temph2b = document.createElement("h2");
+	temph2b.innerHTML = "Lesson and Outcome";
+	temph2b.setAttribute("class", "computer_science_h2");
+	computerScienceContent.appendChild(temph2b);
+
+	let temppb = document.createElement("p");
+	temppb.innerHTML = contentObject[i].lessonAndOutcome;
+	temppb.setAttribute("class", "computer_science_p");
+	computerScienceContent.appendChild(temppb);
+
+	// Conceptual Extension
+	let temph2c = document.createElement("h2");
+	temph2c.innerHTML = "Conceptual Extension";
+	temph2c.setAttribute("class", "computer_science_h2");
+	computerScienceContent.appendChild(temph2c);
+
+	let tempul = document.createElement("ul");
+
+	for (let num = 0; num < contentObject[i].conceptualExtension.length; num++) {
+		let templi = document.createElement("li");
+		templi.innerHTML = contentObject[i].conceptualExtension[num];
+		tempul.appendChild(templi);
+	}
+
+	computerScienceContent.appendChild(tempul);
+
+	// Source Code
+	let temph2d = document.createElement("h2");
+	temph2d.innerHTML = "Source Code";
+	temph2d.setAttribute("class", "computer_science_h2");
+	computerScienceContent.appendChild(temph2d);
 
 	if (needSourceCode.includes(i)) {
 		let tempa = document.createElement("a");

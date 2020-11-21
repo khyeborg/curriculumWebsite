@@ -167,6 +167,26 @@ input {
 	margin-top: 0px;
 }
 
+.computer_science_h2 {
+	text-align: left;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 35px;
+	font-size: 120%;
+}
+
+.computer_science_p {
+	margin-top: 0px;
+}
+
+li {
+	text-align: left;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
 /*@media(max-width: 1200px) {
     .tab {
     	font-size: 100%;
