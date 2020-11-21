@@ -181,6 +181,10 @@ input {
 	margin-top: 0px;
 }
 
+ul {
+	margin-top: 10px;
+}
+
 li {
 	text-align: left;
 	margin-left: 70px;
