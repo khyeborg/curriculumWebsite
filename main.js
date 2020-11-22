@@ -296,7 +296,7 @@ function addComputerScienceNotes(i) {
 		computerScienceContent.appendChild(temppc);
 	}
 
-	else if (i <= 8) {
+	else if (i <= 9) {
 		// Student Learning Objective
 		let temph2 = document.createElement("h2");
 		temph2.innerHTML = "Student Learning Objective";
