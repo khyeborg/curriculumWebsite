@@ -42,7 +42,11 @@ html, body {
 	background-color: #095087;
 	width: 25%;
 	min-width: 25%;
-	min-height: 1300px;
+	min-height: 100%;
+}
+
+#computer_science_page {
+	min-height: 1800px;
 }
 
 .menu {
@@ -50,8 +54,8 @@ html, body {
 	color: #b5d1de;
 	min-width: 25%;
 	padding: 20px;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 32px;
+	padding-right: 32px;
   	box-sizing: border-box;
 }
 
@@ -95,7 +99,7 @@ canvas {
 	height: 605px;
 }
 
-#sketch6 {
+#sketch6, #sketch7 {
 	height: 760px;
 }
 
@@ -194,6 +198,10 @@ li {
 	padding-bottom: 5px;
 }
 
+.a_link {
+	padding: 0px;
+	line-height: 1.4;
+}
 /*@media(max-width: 1200px) {
     .tab {
     	font-size: 100%;

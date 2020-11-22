@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="p5/p5.min.js"></script>
+    <script src="p5/addons/p5.dom.min.js"></script>
+    <script src="p5/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <style> 
+      body {
+        padding: 0; 
+        margin: 0;
+      }
+
+      #controls_div {
+        background-color: #095087;
+        color: white;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        padding: 20px;
+        padding-left: 40px;
+        display: flex;
+        text-align: center;
+      } 
+
+      .controls_sub_div {
+        display: block;
+        width: 50%;
+      }
+
+      .input_div {
+        padding: 10px 0px;
+      }
+
+      .input_span {
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+      }
+
+      input {
+        width: 50px;
+      }
+
+      ::placeholder { 
+        opacity: 0.8; 
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls_div">
+      <div class="controls_sub_div">
+        <div class="input_div">
+          <span class="input_span"># of Initial Uninfected:</span> <input type="text" placeholder="500" id="initialUninfected"> 
+          <button onclick="updateInitialUninfected();">Submit</button>
+        </div>
+
+        <div class="input_div">
+          <span class="input_span"># of Initial Infected:</span> <input type="text" placeholder="2" id="initialInfected"> 
+          <button onclick="updateInitialInfected();">Submit</button>
+        </div>
+      </div>
+
+      <div class="controls_sub_div">
+        <div class="input_div">
+          <span class="input_span">Rate of Infection:</span> <input type="text" placeholder="10" id="rateOfInfection"> 
+          <button onclick="updateRateOfInfection();">Submit</button>
+        </div class="input_div">
+
+        <div class="input_div">
+          <span class="input_span">Mortality Rate:</span> <input type="text" placeholder="20" id="mortalityRate"> 
+          <button onclick="updateMortalityRate();">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

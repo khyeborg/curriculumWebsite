@@ -1,7 +1,11 @@
 // contentArray
 let contentObject = [
 	{
-		"title": "overview"
+		"title": "overview",
+		"introduction": "Welcome to the Computer Science section of the “Understanding the Pandemic” curriculum! In the Computer Science section, students will engage in hands-on coding projects using the p5 Coding Library to build simulations to visualize the spread of COVID-19. The Computer Science section of the curriculum aims to instill awareness about the mechanics of the spread of COVID-19 using culturally sustaining pedagogy and authentic assessments. Through the simulations and coding projects, students will better understand the underlying mechanics of COVID-19 from an analytical perspective to better protect themselves, each other, and their families.",
+		"culturallySustainingPedagogy": "In the Day 7: Virus Variables Input section, students will make use of the COVID Alert NY app and other reliable COVID-19 data sources to gain accurate data to run disease spread simulations that reflect the difference in spread in neighborhoods of different demographics, especially contrasting the difference in spread, recovery, and mortality rates between predominantly white neighborhoods and minority neighborhoods. Students are asked to collect data of the demographics distribution in different cities, select a predominantly white neighborhood and a minority neighborhood, and collect COVID-19 data in the cities selected. Students will use the data collected to run two simulations and record their observations to be used in further discussions centered on reasons for the difference in spread and mortality.",
+		"authenticAssessment": "In the assessment section, students will use the existing code as the foundation and implement additional features to enhance the COVID-19 simulation to better reflect the real time spread of COVID-19. Students are introduced to the assessment and guided to formulate additional features to be added to the existing simulation to better reflect the real time spread of COVID-19. Students are encouraged to tackle the assessment from any aspects of the virus, based on their field of interests. Two sample projects with downloadable source code can be found to introduce students to some possible ways of enhancing the simulation."
+
 	}, 
 
 	{
@@ -84,6 +88,45 @@ let contentObject = [
 								"Implementation of user data input in p5",
 								"Implementation of a user-controlled environment in a p5 particle system"
 								]
+	}, 
+
+	{
+		"title": "Virus Variable Controls",
+		"studentLearningObjective": 'SWBAT make use of the COVID Alert NY app and other reliable COVID-19 data sources to gain accurate data to run disease spread simulations that reflect the difference in spread in neighborhoods of different demographics, especially contrasting the difference in spread, recovery, and mortality rates between predominantly white neighborhoods and minority neighborhoods.',
+		"lessonAndOutcome": "Students will perform research via the COVID Alert NY app and other reliable COVID-19 data sources to collect numbers that they can input to run the disease spread simulation. Students are asked to collect data of the demographics distribution in different cities, select a predominantly white neighborhood and a minority neighborhood, and collect COVID-19 data in the cities selected. Students will use the data collected to run two simulations and record their observations to be used in further discussions.",
+		"conceptualExtension": ["Collect data via the COVID Alert NY app and other reliable COVID-19 data sources",
+								"Collect data of the demographics distribution in different cities",
+								"Compare and contrast disease spread pattern in predominantly white neighborhoods and minority neighborhoods",
+								"Discuss difference in disease spread pattern in in predominantly white neighborhoods and minority neighborhoods"
+								],
+		"dataSources": ["COVID Alert NY",
+						"New York State Department of Health",
+						"CDC COVID Data Tracker"
+						],
+		"dataSourcesLink": ["https://coronavirus.health.ny.gov/covid-alert-ny",
+							"https://www.health.ny.gov/",
+							"https://covid.cdc.gov/covid-data-tracker/#cases_casesper100klast7days"
+							]
+	},
+
+	{
+		"title": "Assessment",
+		"studentLearningObjective": 'SWBAT use the existing code as the foundation and implement additional features to enhance the COVID-19 simulation to better reflect the real time spread of COVID-19.',
+		"lessonAndOutcome": "Students are introduced to the assessment and guided to formulate additional features to be added to the existing simulation to better reflect the real time spread of COVID-19. Students are encouraged to tackle the assessment from any aspects of the virus, based on their field of interests. Two sample projects with downloadable source code can be found to introduce students to some possible ways of enhancing the simulation.",
+		"conceptualExtension": ["Expanding the COVID-19 simulation",
+								"Reading source code",
+								"Implementing source code to expand existing programs"
+								]
+	},
+
+	{
+		"title": "Sample Project #1",
+		"description": "This program implements mask-wearing to track the difference in spread of COVID-19. Mask Rate and Mask Decrease Factor are added as additional variables to control the simulation."
+	},
+
+	{
+		"title": "Sample Project #2",
+		"description": "This program implements social distancing to track the difference in spread of COVID-19. Particles that practice social distancing are surrounding by a red coating."
 	}
 ];
 
