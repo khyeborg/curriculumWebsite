@@ -202,6 +202,10 @@ li {
 	padding: 0px;
 	line-height: 1.4;
 }
+
+.home_menu {
+	padding-bottom: 40px;
+}
 /*@media(max-width: 1200px) {
     .tab {
     	font-size: 100%;

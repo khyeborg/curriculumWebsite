@@ -2,7 +2,7 @@
 let activeColor = "#2b678a";
 let hoverColor = "#2b678a";
 let tabsBackgroundColorArray = ["#153243", "#153243", "#153243", "#153243"];
-let homeMenu = ["CURRICULUM OVERVIEW", "RATIONALE", "PHILOSOPHY", "SOCIAL RELEVANCE", "GOALS", "CITATIONS"];
+let homeMenu = ["CURRICULUM OVERVIEW", "RATIONALE", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHILOSOPHY", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOCIAL RELEVANCE", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GOALS", "CITATIONS"];
 // let socioemotionalMenu = ["Socioemotional Menu 1", "Socioemotional Menu 2", "Socioemotional Menu 3"];
 let mathMenu = ["Overview", "Day 1: Introduction to Exponential Functions (b value)", "Day 2: Introduction to Exponential Functions (a and b values)", "Day 3: Appreciation and Depreciation using Equations", "Day 4: Appreciation and Depreciation using Graphs/Visuals", "Day 5: Gathering Information for Community Analysis", "Day 6: Gathering Information for Community Analysis 2", "Day 7: Drawing Conclusions Between Different Counties", "Day 8: How does COVID 19 being close to home make you feel?"];
 let computerScienceMenu = ["Overview", "Day 1: Setup", "Day 2: OOP w/ Perlin Noise", "Day 3: States", "Day 4: Infection", "Day 5: Recovery or Death", "Day 6: Display Data", "Day 7: Virus Variable Controls", "Day 8: Virus Variables Input", "Assessment: Simulation Enhancement", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample Project #1", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample Project #2"];
@@ -43,24 +43,24 @@ for (let i = 0; i < tabsArray.length; i++) {
 
   tabsArray[i].onclick = function() {
     for (let j = 0; j < pageArray.length; j++) {
-      if (i == j) {
-        pageArray[j].style.display = "flex";
-        tabsArray[j].classList.add("active");
-      }
+		if (i == j) {
+			pageArray[j].style.display = "flex";
+			tabsArray[j].classList.add("active");
+		}
 
-      else {
-        pageArray[j].style.display = "none";
-        tabsArray[j].classList.remove("active");
-      }
+		else {
+			pageArray[j].style.display = "none";
+			tabsArray[j].classList.remove("active");
+		}
 
-      if (tabsArray[j].classList.contains("active")) {
-        tabsArray[j].style.backgroundColor = activeColor;
-      }
+		if (tabsArray[j].classList.contains("active")) {
+			tabsArray[j].style.backgroundColor = activeColor;
+		}
 
-      else {
-        tabsArray[j].style.backgroundColor = tabsBackgroundColorArray[j];
-      }
-    }
+		else {
+			tabsArray[j].style.backgroundColor = tabsBackgroundColorArray[j];
+		}
+	}
 
     restoreDefault();
   }
@@ -87,6 +87,25 @@ for (let i = 0; i < menuBigArray.length; i++) {
 		let tempDiv = document.createElement("div");
 		tempDiv.classList.add("menu");
 		tempDiv.innerHTML = menuBigArray[i][j];
+
+		// submenus for home
+		if (i == 0) {
+			if (j == 0) {
+				tempDiv.classList.add("home_menu");
+			}
+
+			if (j == 1) {
+				tempDiv.classList.add("lastmenu");
+			}
+			
+			if (j == 2 || j == 3 || j == 4) {
+				tempDiv.classList.add("submenu");
+
+				if (j == 4) {
+					tempDiv.style.paddingBottom = "40px";
+				}
+			}
+		}
 
 		if (i == menuBigArray.length - 1 && j == menuBigArray[i].length - 3) {
 			tempDiv.classList.add("lastmenu");
@@ -117,33 +136,35 @@ for (let i = 0; i < tempDivArray.length - 1; i++) {
 			tempDivArray[i][j].style.color = "white";
 		}
 
-		tempDivArray[i][j].onclick = function() {
-			for (let k = 0; k < tempDivArray[i].length; k++) {
-				if (k == j) {
-					contentBigArray[i][k].style.display = "block";
-					tempDivArray[i][k].style.color = "white";
-					tempDivArray[i][k].classList.add("active");
-				}
+		if (! (i == 0 && j == 1)) {
+			tempDivArray[i][j].onclick = function() {
+				for (let k = 0; k < tempDivArray[i].length; k++) {
+					if (k == j) {
+						contentBigArray[i][k].style.display = "block";
+						tempDivArray[i][k].style.color = "white";
+						tempDivArray[i][k].classList.add("active");
+					}
 
-				else {
-					contentBigArray[i][k].style.display = "none";
-					tempDivArray[i][k].style.color = "#b5d1de";
-					tempDivArray[i][k].classList.remove("active");
+					else {
+						contentBigArray[i][k].style.display = "none";
+						tempDivArray[i][k].style.color = "#b5d1de";
+						tempDivArray[i][k].classList.remove("active");
+					}
 				}
 			}
-		}
 
-		tempDivArray[i][j].onmouseover = function() {
-			tempDivArray[i][j].style.color = "white";
-		}
-
-		tempDivArray[i][j].onmouseout = function() {
-			if (tempDivArray[i][j].classList.contains("active")) {
+			tempDivArray[i][j].onmouseover = function() {
 				tempDivArray[i][j].style.color = "white";
 			}
 
-			else {
-				tempDivArray[i][j].style.color = "#b5d1de";
+			tempDivArray[i][j].onmouseout = function() {
+				if (tempDivArray[i][j].classList.contains("active")) {
+					tempDivArray[i][j].style.color = "white";
+				}
+
+				else {
+					tempDivArray[i][j].style.color = "#b5d1de";
+				}
 			}
 		}
 	}
