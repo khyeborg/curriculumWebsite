@@ -127,6 +127,15 @@ let contentObject = [
 	{
 		"title": "Sample Project #2",
 		"description": "This program implements social distancing to track the difference in spread of COVID-19. Particles that practice social distancing are surrounding by a red coating."
+	},
+
+	{
+		"title": "Learning Experiences Bank",
+		"experiencesArray": [
+								["TBD #1", "Blah."],
+								["TBD #2", "Blah."],
+								["TBD #3", "Blah."]
+							]
 	}
 ];
 

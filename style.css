@@ -42,10 +42,6 @@ html, body {
 	background-color: #095087;
 	width: 25%;
 	min-width: 25%;
-	min-height: 100%;
-}
-
-#computer_science_page {
 	min-height: 1800px;
 }
 
@@ -123,6 +119,14 @@ a {
 	display: block;
 	color: #609;
 }
+
+/*.special_a {
+    text-align: left; 
+    padding: 0px 0px; 
+    display: block; 
+    color: none;
+    text-decoration: none;
+}*/
 
 #controls_div {
     background-color: #095087;
