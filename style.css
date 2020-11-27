@@ -124,7 +124,15 @@ a {
     text-align: left; 
     padding: 0px 0px; 
     display: block; 
-    color: none;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.special_a:hover {
+    text-align: left; 
+    padding: 0px 0px; 
+    display: block; 
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }*/
 
