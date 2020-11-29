@@ -85,8 +85,8 @@ for (let i = 0; i < menuBigArray.length; i++) {
 		// create menu
 		let tempDiv = document.createElement("div");
 		tempDiv.classList.add("menu");
-		tempDiv.innerHTML = menuBigArray[i][j];
-		// tempDiv.innerHTML = "<a class='special_a' href='#'>" + menuBigArray[i][j] + "</a>";
+		// tempDiv.innerHTML = menuBigArray[i][j];
+		tempDiv.innerHTML = "<a class='special_a' href='#'>" + menuBigArray[i][j] + "</a>";
 
 
 		// submenus for home
@@ -137,38 +137,38 @@ for (let i = 0; i < tempDivArray.length - 1; i++) {
 	for (let j = 0; j < tempDivArray[i].length; j++) {
 		// make sure the first menu is active
 		if (j == 0) {
-			tempDivArray[i][j].classList.add("active");
-			tempDivArray[i][j].style.color = "white";
+			tempDivArray[i][j].children[0].classList.add("active");
+			tempDivArray[i][j].children[0].style.color = "white";
 		}
 
 		if (!(i == 0 && j == 1)) {
 			tempDivArray[i][j].onclick = function() {
 				for (let k = 0; k < tempDivArray[i].length; k++) {
 					if (k == j) {
-						contentBigArray[i][k].style.display = "block";
-						tempDivArray[i][k].style.color = "white";
-						tempDivArray[i][k].classList.add("active");
+						contentBigArray[i][k].children[0].style.display = "block";
+						tempDivArray[i][k].children[0].style.color = "white";
+						tempDivArray[i][k].children[0].classList.add("active");
 					}
 
 					else {
-						contentBigArray[i][k].style.display = "none";
-						tempDivArray[i][k].style.color = "#b5d1de";
-						tempDivArray[i][k].classList.remove("active");
+						contentBigArray[i][k].children[0].style.display = "none";
+						tempDivArray[i][k].children[0].style.color = "#b5d1de";
+						tempDivArray[i][k].children[0].classList.remove("active");
 					}
 				}
 			}
 
 			tempDivArray[i][j].onmouseover = function() {
-				tempDivArray[i][j].style.color = "white";
+				tempDivArray[i][j].children[0].style.color = "white";
 			}
 
 			tempDivArray[i][j].onmouseout = function() {
-				if (tempDivArray[i][j].classList.contains("active")) {
-					tempDivArray[i][j].style.color = "white";
+				if (tempDivArray[i][j].children[0].classList.contains("active")) {
+					tempDivArray[i][j].children[0].style.color = "white";
 				}
 
 				else {
-					tempDivArray[i][j].style.color = "#b5d1de";
+					tempDivArray[i][j].children[0].style.color = "#b5d1de";
 				}
 			}
 		}
@@ -181,8 +181,8 @@ for (let i = 0; i < tempDivArray.length - 1; i++) {
 for (let i = 0; i < tempDivArray[2].length; i++) {
 	// make sure the first menu is active
 	if (i == 0) {
-		tempDivArray[2][i].style.color = "white";
-		tempDivArray[2][i].classList.add("active");
+		tempDivArray[2][i].children[0].style.color = "white";
+		tempDivArray[2][i].children[0].classList.add("active");
 	}
 
 	if (i != 13) {
@@ -210,28 +210,28 @@ for (let i = 0; i < tempDivArray[2].length; i++) {
 			// white or #b5d1de
 			for (let j = 0; j < tempDivArray[2].length; j++) {
 				if (i == j) {
-					tempDivArray[2][j].style.color = "white";
-					tempDivArray[2][j].classList.add("active");
+					tempDivArray[2][j].children[0].style.color = "white";
+					tempDivArray[2][j].children[0].classList.add("active");
 				}
 
 				else {
-					tempDivArray[2][j].style.color = "#b5d1de";
-					tempDivArray[2][j].classList.remove("active");
+					tempDivArray[2][j].children[0].style.color = "#b5d1de";
+					tempDivArray[2][j].children[0].classList.remove("active");
 				}
 			}
 		}
 
 		tempDivArray[2][i].onmouseover = function() {
-			tempDivArray[2][i].style.color = "white";
+			tempDivArray[2][i].children[0].style.color = "white";
 		}
 
 		tempDivArray[2][i].onmouseout = function() {
-			if (tempDivArray[2][i].classList.contains("active")) {
-				tempDivArray[2][i].style.color = "white";
+			if (tempDivArray[2][i].children[0].classList.contains("active")) {
+				tempDivArray[2][i].children[0].style.color = "white";
 			}
 
 			else {
-				tempDivArray[2][i].style.color = "#b5d1de";
+				tempDivArray[2][i].children[0].style.color = "#b5d1de";
 			}
 		}
 	}
