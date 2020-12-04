@@ -86,8 +86,14 @@ for (let i = 0; i < menuBigArray.length; i++) {
 		let tempDiv = document.createElement("div");
 		tempDiv.classList.add("menu");
 		// tempDiv.innerHTML = menuBigArray[i][j];
-		tempDiv.innerHTML = "<a class='special_a' href='#'>" + menuBigArray[i][j] + "</a>";
 
+		if (i == 0 && j == 1 || i == 2 && j == 13) {
+			tempDiv.innerHTML = menuBigArray[i][j];
+		}
+
+		else {
+			tempDiv.innerHTML = "<a class='special_a' href='#'>" + menuBigArray[i][j] + "</a>";
+		}
 
 		// submenus for home
 		if (i == 0) {
@@ -152,8 +158,11 @@ for (let i = 0; i < tempDivArray.length - 1; i++) {
 
 					else {
 						contentBigArray[i][k].style.display = "none";
-						tempDivArray[i][k].children[0].style.color = "#b5d1de";
-						tempDivArray[i][k].children[0].classList.remove("active");
+
+						if (k != 1) {
+							tempDivArray[i][k].children[0].style.color = "#b5d1de";
+							tempDivArray[i][k].children[0].classList.remove("active");
+						}
 					}
 				}
 			}
@@ -215,8 +224,10 @@ for (let i = 0; i < tempDivArray[2].length; i++) {
 				}
 
 				else {
-					tempDivArray[2][j].children[0].style.color = "#b5d1de";
-					tempDivArray[2][j].children[0].classList.remove("active");
+					if (j != 13) {
+						tempDivArray[2][j].children[0].style.color = "#b5d1de";
+						tempDivArray[2][j].children[0].classList.remove("active");
+					}
 				}
 			}
 		}
@@ -248,8 +259,11 @@ function restoreDefault() {
 
 			else {
 				contentBigArray[i][j].style.display = "none";
-				tempDivArray[i][j].children[0].classList.remove("active");
-				tempDivArray[i][j].children[0].style.color = "#b5d1de";
+
+				if (!(i == 0 && j == 1)) {
+					tempDivArray[i][j].children[0].classList.remove("active");
+					tempDivArray[i][j].children[0].style.color = "#b5d1de";
+				}
 			}
 		}
 	}
