@@ -215,9 +215,58 @@ li {
 	line-height: 1.4;
 }
 
+.a_link2 {
+	padding: 8px 70px;
+	padding-bottom: 5px;
+}
+
+.a_link3 {
+	display: inline;
+	padding: 0px;
+}
+
 .home_menu {
 	padding-bottom: 40px;
 }
+
+.side_by_side {
+	display: flex;
+	justify-content: center;
+}
+
+.side_by_side_child {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#red {
+	color: red;
+	font-weight: bold;
+}
+
+#blue {
+	color: #4a86e8;
+	font-weight: bold;
+}
+
+#black {
+	font-weight: bold;
+}
+
+#left {
+	text-align: left;
+}
+
+#car_p {
+	margin-top: 5px;
+}
+
+.day7_p {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
 /*@media(max-width: 1200px) {
     .tab {
     	font-size: 100%;
