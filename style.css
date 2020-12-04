@@ -42,7 +42,7 @@ html, body {
 	background-color: #095087;
 	width: 25%;
 	min-width: 25%;
-	min-height: 1800px;
+	min-height: 3000px;
 }
 
 .menu {
@@ -197,6 +197,12 @@ input {
 .computer_science_p {
 	margin-top: 0px;
 	line-height: 1.4;
+}
+
+.computer_science_div {
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 70px;
 }
 
 ul {

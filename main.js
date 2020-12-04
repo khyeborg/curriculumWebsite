@@ -460,6 +460,16 @@ function addComputerScienceNotes(i) {
 			temph2.setAttribute("class", "computer_science_h2");
 			computerScienceContent.appendChild(temph2);
 
+			let tempdiv = document.createElement("div");
+			tempdiv.setAttribute("class", "computer_science_div");
+
+			let tempimg = document.createElement("img");
+			tempimg.src = contentObject[i].experiencesArray[j][2];
+			tempimg.style.width = contentObject[i].experiencesArray[j][3];
+			
+			tempdiv.appendChild(tempimg);
+			computerScienceContent.appendChild(tempdiv);
+
 			let tempp = document.createElement("p");
 			tempp.innerHTML = contentObject[i].experiencesArray[j][1];
 			tempp.setAttribute("class", "computer_science_p");
