@@ -4,7 +4,7 @@ let hoverColor = "#2b678a";
 let tabsBackgroundColorArray = ["#153243", "#153243", "#153243", "#153243"];
 let homeMenu = ["CURRICULUM OVERVIEW", "RATIONALE", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHILOSOPHY", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOCIAL RELEVANCE", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GOALS", "CITATIONS"];
 // let socioemotionalMenu = ["Socioemotional Menu 1", "Socioemotional Menu 2", "Socioemotional Menu 3"];
-let mathMenu = ["Overview", "Day 1: Introduction to Exponential Functions (b value)", "Day 2: Introduction to Exponential Functions (a and b values)", "Day 3: Appreciation and Depreciation using Equations", "Day 4: Appreciation and Depreciation using Graphs/Visuals", "Day 5: Gathering Information for Community Analysis", "Day 6: Gathering Information for Community Analysis 2", "Day 7: Drawing Conclusions Between Different Counties", "Day 8: How does COVID 19 being close to home make you feel?", "Learning Experiences Bank", "Lesson Plan"];
+let mathMenu = ["Overview", "Day 1: Introduction to Exponential Functions (b value)", "Day 2: Introduction to Exponential Functions (a and b values)", "Day 3: Appreciation and Depreciation using Equations", "Day 4: Appreciation and Depreciation using Graphs/Visuals", "Day 5: Gathering Information for Community Analysis", "Day 6: Gathering Information for Community Analysis 2", "Day 7: Drawing Conclusions Between Different Counties", "Day 8: How does COVID 19 being close to home make you feel?", "Assessment", "Learning Experiences Bank", "Lesson Plan"];
 let computerScienceMenu = ["Overview", "Day 1: Setup", "Day 2: OOP w/ Perlin Noise", "Day 3: States", "Day 4: Infection", "Day 5: Recovery or Death", "Day 6: Display Data", "Day 7: Virus Variable Controls", "Day 8: Virus Variables Input", "Assessment: Simulation Enhancement", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample Project #1", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample Project #2", "Learning Experiences Bank", "Lesson Plan", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lesson Plan #1", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lesson Plan #2", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lesson Plan #3"];
 let computerScienceTitle = ["Overview", "Setup", "OOP w/ Perlin Noise", "States", "Infection", "Recovery or Death", "Display Data", "Virus Variable Controls", "Virus Variables Input", "Assessment: Simulation Enhancement", "Wearing Masks", "Social Distancing", "Learning Experiences Bank", "Lesson Plan", "Lesson Plan #1", "Lesson Plan #2", "Lesson Plan #3"];
 let menuBigArray = [homeMenu, mathMenu, computerScienceMenu];
@@ -145,13 +145,13 @@ for (let i = 0; i < tempDivArray.length - 1; i++) {
 			tempDivArray[i][j].onclick = function() {
 				for (let k = 0; k < tempDivArray[i].length; k++) {
 					if (k == j) {
-						contentBigArray[i][k].children[0].style.display = "block";
+						contentBigArray[i][k].style.display = "block";
 						tempDivArray[i][k].children[0].style.color = "white";
 						tempDivArray[i][k].children[0].classList.add("active");
 					}
 
 					else {
-						contentBigArray[i][k].children[0].style.display = "none";
+						contentBigArray[i][k].style.display = "none";
 						tempDivArray[i][k].children[0].style.color = "#b5d1de";
 						tempDivArray[i][k].children[0].classList.remove("active");
 					}
@@ -242,14 +242,14 @@ function restoreDefault() {
 		for (let j = 0; j < menuBigArray[i].length; j++) {
 			if (j == 0) {
 				contentBigArray[i][j].style.display = "block";
-				tempDivArray[i][j].classList.add("active");
-				tempDivArray[i][j].style.color = "white";
+				tempDivArray[i][j].children[0].classList.add("active");
+				tempDivArray[i][j].children[0].style.color = "white";
 			}
 
 			else {
 				contentBigArray[i][j].style.display = "none";
-				tempDivArray[i][j].classList.remove("active");
-				tempDivArray[i][j].style.color = "#b5d1de";
+				tempDivArray[i][j].children[0].classList.remove("active");
+				tempDivArray[i][j].children[0].style.color = "#b5d1de";
 			}
 		}
 	}
