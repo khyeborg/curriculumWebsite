@@ -476,6 +476,26 @@ function addComputerScienceNotes(i) {
 			computerScienceContent.appendChild(tempp);
 		}
 	}
+
+	// lesson plan
+	else if (i >= 14) {
+		let tempp = document.createElement("p");
+		tempp.setAttribute("class", "computer_science_p");
+
+		if (i == 14) {
+			tempp.innerHTML = "Click " + "<a class='a_link3' target='_blank' href='" + contentObject[i - 1].lesson[0] + "'>here</a> to view Lesson Plan #1.";
+		}
+
+		else if (i == 15) {
+			tempp.innerHTML = "Click " + "<a class='a_link3' target='_blank' href='" + contentObject[i - 2].lesson[1] + "'>here</a> to view Lesson Plan #2.";
+		}
+
+		else if (i == 16) {
+			tempp.innerHTML = "Click " + "<a class='a_link3' target='_blank' href='" + contentObject[i - 3].lesson[2] + "'>here</a> to view Lesson Plan #3.";
+		}
+		
+		computerScienceContent.appendChild(tempp);
+	}
 }
 
 

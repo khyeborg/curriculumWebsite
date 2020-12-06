@@ -138,6 +138,15 @@ let contentObject = [
 								["Collaborative Learning in Small Groups", "When learning code or tackling assessments, students are broken down into small groups to promote collaborative learning through small group discussions. Instead of only asking teachers for help, students are instructed to approach their peers first with any code-related questions. That way, students get to help each other while learning to work collaboratively through the process. Even though students are instructed to submit individual assessments of enhanced simulations, students are encouraged to collaborate with each other to generate ideas and code to implement additional features to enhance the COVID-19 simulation.", "images/small.png", "500px"],
 								["Authentic Assessments", "Students use existing code as foundation and implement additional features to enhance the COVID-19 simulation to better reflect the real time spread of COVID-19. Students are introduced to the assessment and guided to formulate additional features to be added to the existing simulation to better reflect the real time spread of COVID-19. Students are encouraged to tackle the assessment from any aspects of the virus, based on their field of interests. Two sample projects with downloadable source code can be found to introduce students to some possible ways of enhancing the simulation.", "images/authentic.png", "700px"]
 							]
+	}, 
+
+	{
+		"title": "Lesson Plan",
+		"lesson": 	[
+						"https://docs.google.com/document/d/1kzIeD98iC9bcd9n7_omgDYJAbskt3B-asymEctLaF94/edit?usp=sharing",
+						"https://docs.google.com/document/d/1kzIeD98iC9bcd9n7_omgDYJAbskt3B-asymEctLaF94/edit?usp=sharing",
+						"https://docs.google.com/document/d/1kzIeD98iC9bcd9n7_omgDYJAbskt3B-asymEctLaF94/edit?usp=sharing"
+					]
 	}
 ];
 
