@@ -143,7 +143,7 @@ let contentObject = [
 	{
 		"title": "Lesson Plan",
 		"lesson": 	[
-						"https://docs.google.com/document/d/1kzIeD98iC9bcd9n7_omgDYJAbskt3B-asymEctLaF94/edit?usp=sharing",
+						"https://docs.google.com/document/d/1ONIqDeynQtM92QgQwx35Bmg7NJZrZIydexB_bR755AU/edit?usp=sharing",
 						"https://docs.google.com/document/d/1kzIeD98iC9bcd9n7_omgDYJAbskt3B-asymEctLaF94/edit?usp=sharing",
 						"https://docs.google.com/document/d/1kzIeD98iC9bcd9n7_omgDYJAbskt3B-asymEctLaF94/edit?usp=sharing"
 					]
