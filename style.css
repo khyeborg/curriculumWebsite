@@ -273,6 +273,29 @@ li {
 	text-align: left;
 }
 
+.goals_h2 {
+	text-align: left;
+	padding-left: 70px;
+	font-size: 22px;
+}
+
+#virus_cartoon_div {
+	text-align: center;
+}
+
+#virus_cartoon {
+	width: 180px;
+	margin-top: 40px;
+}
+
+.list_stuff {
+	padding-bottom: 20px;
+}
+
+.list_stuff2 {
+	padding-top: 20px;
+}
+
 /*@media(max-width: 1200px) {
     .tab {
     	font-size: 100%;
